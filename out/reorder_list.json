@@ -1,9 +1,0 @@
-[
-  {
-    "stock_on_hand": 30,
-    "sku": "SKU-1002",
-    "name": "USB-C Mouse",
-    "reorder_point": 40,
-    "gap": 10
-  }
-]
