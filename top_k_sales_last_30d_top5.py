@@ -6,7 +6,7 @@ from db import get_db
 def main():
     db = get_db()
 
-    start_date = datetime.now(timezone.utc) - timedelta(days=365)
+    start_date = datetime.now(timezone.utc) - timedelta(days=30)
 
     pipeline = [
         {"$match": {"createdAt": {"$gte": start_date}}},
