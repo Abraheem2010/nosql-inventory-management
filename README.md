@@ -1,51 +1,57 @@
-# NoSQL Inventory Management System
+# NoSQL Inventory Management
 
-A MongoDB-based inventory management system using aggregation pipelines.
+A small inventory-analytics toolkit built on **MongoDB aggregation pipelines**.
+Each script answers one business question by aggregating stock movements and orders.
 
-## Project Structure
+## What it demonstrates
+
+- MongoDB **aggregation pipelines** (`$group`, `$lookup`, `$unwind`, `$cond`, `$project`, `$match`, `$sort`, `$limit`)
+- Derived metrics: stock-on-hand, inventory value, and reorder gaps
+- DB connection kept separate from the queries (`db.py`)
+- Environment-based configuration via `.env` — no hard-coded credentials
+
+## Project structure
 
 ```
-pipelines/
-├── db.py                          # MongoDB connection
-├── inventory_value_ILS.py         # Total inventory value in ILS (₪)
-├── inventory_value_by_category.py # Inventory value grouped by category
-├── reorder_list.py                # Products that need reordering
-└── top_k_sales_last_30d_top5.py   # Top 5 best-selling products
+.
+├── db.py                          # MongoDB connection (reads MONGO_URI from .env)
+├── inventory_value_ILS.py         # Inventory value per product, in ILS (₪)
+├── inventory_value_by_category.py # Inventory value & units grouped by category
+├── reorder_list.py                # Products below their reorder point, sorted by gap
+└── top_k_sales_last_30d_top5.py   # Top 5 best-selling products by quantity
 ```
 
-## Setup
+Each script prints its result as JSON and also writes it to `out/<name>.json`.
 
-### 1. Install dependencies
-```bash
-pip install pymongo python-dotenv
-```
-
-### 2. Configure environment
-Create a `.env` file in the `pipelines/` folder:
-```
-MONGO_URI=mongodb+srv://<username>:<password>@cluster0.xxxxx.mongodb.net/?appName=Cluster0
-```
-
-### 3. Run a pipeline
-```bash
-cd pipelines
-python inventory_value_ILS.py
-python reorder_list.py
-python inventory_value_by_category.py
-python top_k_sales_last_30d_top5.py
-```
-
-## Database Collections
+## Database: `inventory`
 
 | Collection | Description |
 |---|---|
-| `products` | Product catalog with SKU, name, price, category |
-| `stock_movements` | IN/OUT stock transactions |
-| `orders` | Customer orders with items and quantities |
+| `products` | Catalog: SKU, name, price, category, reorder_point |
+| `stock_movements` | IN/OUT stock transactions (`type`, `qty`, `product_id`) |
+| `orders` | Customer orders with `items` (product_id, qty) and `createdAt` |
 
-## Pipeline Outputs
+## Setup
 
-- **inventory_value_ILS** — Total value per product in Israeli Shekel
-- **inventory_value_by_category** — Value and units grouped by category  
-- **reorder_list** — Products below reorder point, sorted by gap
-- **top_k_sales** — Top 5 products by quantity sold
+1. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+2. Create a `.env` file in the project root:
+   ```
+   MONGO_URI=mongodb+srv://<user>:<password>@<cluster>/?appName=Cluster0
+   ```
+3. Run any script:
+   ```bash
+   python inventory_value_ILS.py
+   python inventory_value_by_category.py
+   python reorder_list.py
+   python top_k_sales_last_30d_top5.py
+   ```
+
+## Pipelines
+
+- **inventory_value_ILS** — stock-on-hand × price per product, sorted by total value.
+- **inventory_value_by_category** — value and units grouped by category.
+- **reorder_list** — products whose stock is below `reorder_point`, sorted by the shortfall.
+- **top_k_sales** — the five products with the highest quantity sold.
