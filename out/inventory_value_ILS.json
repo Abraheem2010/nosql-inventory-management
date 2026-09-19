@@ -1,0 +1,37 @@
+[
+  {
+    "stock_on_hand": 376,
+    "sku": "SKU-1003",
+    "name": "HDMI Cable 2m",
+    "price_ils": 25,
+    "total_value_ils": 9400
+  },
+  {
+    "stock_on_hand": 60,
+    "sku": "SKU-1002",
+    "name": "USB-C Mouse",
+    "price_ils": 120,
+    "total_value_ils": 7200
+  },
+  {
+    "stock_on_hand": 47,
+    "sku": "SKU-1001",
+    "name": "Wireless Keyboard",
+    "price_ils": 150,
+    "total_value_ils": 7050
+  },
+  {
+    "stock_on_hand": 20,
+    "sku": "SKU-1005",
+    "name": "Bluetooth Headset",
+    "price_ils": 250,
+    "total_value_ils": 5000
+  },
+  {
+    "stock_on_hand": 8,
+    "sku": "SKU-1004",
+    "name": "Aluminum Laptop Stand",
+    "price_ils": 150,
+    "total_value_ils": 1200
+  }
+]

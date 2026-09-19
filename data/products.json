@@ -1,0 +1,60 @@
+[{
+  "_id": {
+    "$oid": "68d345e52a5566a690aa46b8"
+  },
+  "sku": "SKU-1001",
+  "name": "Wireless Keyboard",
+  "category": "Electronics",
+  "cost": 100,
+  "price": 150,
+  "reorder_point": 5,
+  "supplier_id": "SUP-1"
+},
+{
+  "_id": {
+    "$oid": "68d54e832a5566a690aa4702"
+  },
+  "sku": "SKU-1002",
+  "name": "USB-C Mouse",
+  "category": "Electronics",
+  "cost": 60,
+  "price": 120,
+  "reorder_point": 40,
+  "supplier_id": "SUP-1"
+},
+{
+  "_id": {
+    "$oid": "68d54ea22a5566a690aa4704"
+  },
+  "sku": "SKU-1003",
+  "name": "HDMI Cable 2m",
+  "category": "Accessories",
+  "cost": 10,
+  "price": 25,
+  "reorder_point": 20,
+  "supplier_id": "SUP-2"
+},
+{
+  "_id": {
+    "$oid": "68d5584d2a5566a690aa470b"
+  },
+  "sku": "SKU-1004",
+  "name": "Aluminum Laptop Stand",
+  "category": "Accessories",
+  "cost": 80,
+  "price": 150,
+  "reorder_point": 15,
+  "supplier_id": "SUP-2"
+},
+{
+  "_id": {
+    "$oid": "68d5587a2a5566a690aa470d"
+  },
+  "sku": "SKU-1005",
+  "name": "Bluetooth Headset",
+  "category": "Electronics",
+  "cost": 120,
+  "price": 250,
+  "reorder_point": 30,
+  "supplier_id": "SUP-3"
+}]

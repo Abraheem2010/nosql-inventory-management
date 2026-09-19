@@ -1,0 +1,16 @@
+[
+  {
+    "stock_on_hand": 20,
+    "sku": "SKU-1005",
+    "name": "Bluetooth Headset",
+    "reorder_point": 30,
+    "gap": 10
+  },
+  {
+    "stock_on_hand": 8,
+    "sku": "SKU-1004",
+    "name": "Aluminum Laptop Stand",
+    "reorder_point": 15,
+    "gap": 7
+  }
+]
