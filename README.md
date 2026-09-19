@@ -1,8 +1,8 @@
 # NoSQL Inventory Management
 
 An inventory-analytics toolkit built on **MongoDB aggregation pipelines**. Each script answers one
-business question by aggregating stock movements and orders — and the repository ships with the
-sample dataset, so it runs end to end on a fresh machine.
+business question by aggregating stock movements against the product catalogue — and the repository
+ships with its dataset, so it runs end to end on a fresh machine.
 
 ## Quick start
 
@@ -17,11 +17,14 @@ python inventory_value_ILS.py
 
 ## What it demonstrates
 
-- MongoDB **aggregation pipelines**: `$group`, `$lookup`, `$unwind`, `$cond`, `$project`, `$match`, `$sort`, `$limit`, `$round`
+- MongoDB **aggregation pipelines**: `$group`, `$lookup`, `$unwind`, `$cond`, `$project`, `$match`, `$sort`, `$round`
 - Stock-on-hand derived from an **event log** rather than stored as a field — `IN` movements add,
   `OUT` movements subtract, through a `$cond` inside `$group`
 - Joining collections with `$lookup` on `ObjectId` keys
-- Connection handling kept out of the queries (`db.py`), configuration through the environment, no credentials in code
+- The same stock figure valued two ways: at **selling price** (what the shelf is worth to the
+  customer) and at **cost** (what it ties up in capital)
+- Connection handling kept out of the queries (`db.py`), configuration through the environment,
+  no credentials in code
 
 ## The data
 
@@ -31,9 +34,8 @@ Database `inventory`, seeded from `data/`:
 |---|---:|---|
 | `products` | 5 | `sku`, `name`, `category`, `cost`, `price`, `reorder_point`, `supplier_id` |
 | `stock_movements` | 14 | `product_id`, `type` (`IN` / `OUT`), `qty`, `at`, `reason` |
-| `orders` | — | `items[]` (`product_id`, `qty`), `createdAt` — see note below |
 
-## The four questions
+## The three questions
 
 ### 1. What is the inventory worth? — `inventory_value_ILS.py`
 
@@ -49,16 +51,17 @@ Stock-on-hand × selling price, per product.
 
 **Total: ₪29,850**
 
-### 2. Where is the value tied up? — `inventory_value_by_category.py`
+### 2. Where is the capital tied up? — `inventory_value_by_category.py`
 
-Grouped by category, valued at **cost** rather than price.
+Grouped by category, valued at **cost** this time.
 
 | Category | Units | Value |
 |---|---:|---:|
 | Electronics | 127 | ₪10,700 |
 | Accessories | 384 | ₪4,400 |
 
-Accessories hold three times the units but a fraction of the capital.
+Accessories hold three times the units but a fraction of the capital — a different answer from
+question 1, and the reason both views are worth having.
 
 ### 3. What needs reordering? — `reorder_list.py`
 
@@ -69,26 +72,18 @@ Products below their reorder point, sorted by the size of the shortfall.
 | SKU-1005 | Bluetooth Headset | 20 | 30 | 10 |
 | SKU-1004 | Aluminum Laptop Stand | 8 | 15 | 7 |
 
-### 4. What sells best? — `top_k_sales_last_30d_top5.py`
-
-The five products with the highest quantity sold in the last 30 days, from the `orders` collection.
-
-> The `orders` export is not included in this repository yet, so this script currently returns an
-> empty list against the sample data. The pipeline itself is complete.
-
-Every script prints its result as JSON and writes it to `out/<name>.json`; the committed files under
+Every script prints its result as JSON and writes it to `out/<name>.json`; the files committed under
 `out/` are the output of an actual run.
 
 ## Project structure
 
 ```
 .
-├── data/                          # sample dataset (MongoDB Extended JSON)
+├── data/                          # the dataset (MongoDB Extended JSON)
 ├── out/                           # results of a real run
 ├── db.py                          # connection: MONGO_URI, or local by default
 ├── seed_db.py                     # loads data/ into MongoDB
 ├── inventory_value_ILS.py         # question 1
 ├── inventory_value_by_category.py # question 2
-├── reorder_list.py                # question 3
-└── top_k_sales_last_30d_top5.py   # question 4
+└── reorder_list.py                # question 3
 ```
