@@ -1,30 +1,30 @@
 [{
   "_id": {
-    "$oid": "68d349ef2a5566a690aa46bf"
+    "$oid": "68d55ec62a5566a690aa4715"
   },
   "product_id": {
-    "$oid": "68d345e52a5566a690aa46b8"
+    "$oid": "68d5584d2a5566a690aa470b"
   },
   "type": "IN",
-  "qty": 50,
+  "qty": 30,
   "at": {
-    "$date": "2025-09-24T10:00:00.000Z"
+    "$date": "2025-09-24T09:20:00.000Z"
   },
   "reason": "purchase"
 },
 {
   "_id": {
-    "$oid": "68d34a232a5566a690aa46c1"
+    "$oid": "68d55ec62a5566a690aa4717"
   },
   "product_id": {
-    "$oid": "68d345e52a5566a690aa46b8"
+    "$oid": "68d5587a2a5566a690aa470d"
   },
-  "type": "OUT",
-  "qty": 3,
+  "type": "IN",
+  "qty": 25,
   "at": {
-    "$date": "2025-09-25T12:30:00.000Z"
+    "$date": "2025-09-24T09:30:00.000Z"
   },
-  "reason": "sale"
+  "reason": "purchase"
 },
 {
   "_id": {
@@ -42,15 +42,201 @@
 },
 {
   "_id": {
-    "$oid": "68d55ec62a5566a690aa4712"
+    "$oid": "68d9cb66451a13ab04d66767"
   },
   "product_id": {
-    "$oid": "68d54e832a5566a690aa4702"
+    "$oid": "68d9cb66451a13ab04d6675f"
   },
   "type": "OUT",
-  "qty": 30,
+  "qty": 4,
   "at": {
-    "$date": "2025-09-26T10:00:00.000Z"
+    "$date": "2025-04-08T23:57:26.334Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68d9cb66451a13ab04d66763"
+  },
+  "product_id": {
+    "$oid": "68d9cb66451a13ab04d6675d"
+  },
+  "type": "OUT",
+  "qty": 1,
+  "at": {
+    "$date": "2025-03-26T00:57:26.334Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68d55ec62a5566a690aa4716"
+  },
+  "product_id": {
+    "$oid": "68d5584d2a5566a690aa470b"
+  },
+  "type": "OUT",
+  "qty": 22,
+  "at": {
+    "$date": "2025-09-27T12:00:00.000Z"
+  },
+  "reason": "sale"
+},
+{
+  "_id": {
+    "$oid": "68d9cb66451a13ab04d66762"
+  },
+  "product_id": {
+    "$oid": "68d9cb66451a13ab04d6675d"
+  },
+  "type": "IN",
+  "qty": 61,
+  "at": {
+    "$date": "2025-03-25T00:57:26.334Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68d34a232a5566a690aa46c1"
+  },
+  "product_id": {
+    "$oid": "68d345e52a5566a690aa46b8"
+  },
+  "type": "OUT",
+  "qty": 3,
+  "at": {
+    "$date": "2025-09-25T12:30:00.000Z"
+  },
+  "reason": "sale"
+},
+{
+  "_id": {
+    "$oid": "68d55ec62a5566a690aa4718"
+  },
+  "product_id": {
+    "$oid": "68d5587a2a5566a690aa470d"
+  },
+  "type": "OUT",
+  "qty": 5,
+  "at": {
+    "$date": "2025-09-27T16:00:00.000Z"
+  },
+  "reason": "sale"
+},
+{
+  "_id": {
+    "$oid": "68d9c098451a13ab04d66753"
+  },
+  "product_id": {
+    "$oid": "68d54ea22a5566a690aa4704"
+  },
+  "type": "IN",
+  "qty": 120,
+  "at": {
+    "$date": "2025-05-20T14:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68d9cb66451a13ab04d66766"
+  },
+  "product_id": {
+    "$oid": "68d9cb66451a13ab04d6675f"
+  },
+  "type": "IN",
+  "qty": 67,
+  "at": {
+    "$date": "2025-04-07T23:57:26.334Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68d9cb66451a13ab04d66760"
+  },
+  "product_id": {
+    "$oid": "68d9cb66451a13ab04d6675c"
+  },
+  "type": "IN",
+  "qty": 33,
+  "at": {
+    "$date": "2025-06-15T23:57:26.334Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68f41fc17edc5d8124b66ea7"
+  },
+  "product_id": {
+    "$oid": "68ef0e92d780c57deb7dfe96"
+  },
+  "qty": 60,
+  "type": "IN",
+  "at": {
+    "$date": "2025-10-18T23:16:17.158Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68d349ef2a5566a690aa46bf"
+  },
+  "product_id": {
+    "$oid": "68d345e52a5566a690aa46b8"
+  },
+  "type": "IN",
+  "qty": 50,
+  "at": {
+    "$date": "2025-09-24T10:00:00.000Z"
+  },
+  "reason": "purchase"
+},
+{
+  "_id": {
+    "$oid": "68ef1b9160ff85f8e2daef70"
+  },
+  "product_id": {
+    "$oid": "68ef1b91d780c57deb7e00cb"
+  },
+  "qty": 60,
+  "type": "IN",
+  "at": {
+    "$date": "2025-06-17T03:57:05.900Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68d9cb66451a13ab04d66764"
+  },
+  "product_id": {
+    "$oid": "68d9cb66451a13ab04d6675e"
+  },
+  "type": "IN",
+  "qty": 56,
+  "at": {
+    "$date": "2025-05-25T23:57:26.334Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68f41fc17edc5d8124b66ea6"
+  },
+  "product_id": {
+    "$oid": "68ef0e92d780c57deb7dfe95"
+  },
+  "qty": -90,
+  "type": "OUT",
+  "at": {
+    "$date": "2025-10-18T23:16:17.158Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68d55ec62a5566a690aa4714"
+  },
+  "product_id": {
+    "$oid": "68d54ea22a5566a690aa4704"
+  },
+  "type": "OUT",
+  "qty": 12,
+  "at": {
+    "$date": "2025-09-26T13:00:00.000Z"
   },
   "reason": "sale"
 },
@@ -70,91 +256,85 @@
 },
 {
   "_id": {
-    "$oid": "68d55ec62a5566a690aa4714"
+    "$oid": "68d9c098451a13ab04d66754"
   },
   "product_id": {
     "$oid": "68d54ea22a5566a690aa4704"
   },
   "type": "OUT",
-  "qty": 12,
+  "qty": 10,
   "at": {
-    "$date": "2025-09-26T13:00:00.000Z"
-  },
-  "reason": "sale"
+    "$date": "2025-05-21T09:30:00.000Z"
+  }
 },
 {
   "_id": {
-    "$oid": "68d55ec62a5566a690aa4715"
-  },
-  "product_id": {
-    "$oid": "68d5584d2a5566a690aa470b"
-  },
-  "type": "IN",
-  "qty": 30,
-  "at": {
-    "$date": "2025-09-24T09:20:00.000Z"
-  },
-  "reason": "purchase"
-},
-{
-  "_id": {
-    "$oid": "68d55ec62a5566a690aa4716"
-  },
-  "product_id": {
-    "$oid": "68d5584d2a5566a690aa470b"
-  },
-  "type": "OUT",
-  "qty": 22,
-  "at": {
-    "$date": "2025-09-27T12:00:00.000Z"
-  },
-  "reason": "sale"
-},
-{
-  "_id": {
-    "$oid": "68d55ec62a5566a690aa4717"
-  },
-  "product_id": {
-    "$oid": "68d5587a2a5566a690aa470d"
-  },
-  "type": "IN",
-  "qty": 25,
-  "at": {
-    "$date": "2025-09-24T09:30:00.000Z"
-  },
-  "reason": "purchase"
-},
-{
-  "_id": {
-    "$oid": "68d55ec62a5566a690aa4718"
+    "$oid": "68d9c0c0451a13ab04d66758"
   },
   "product_id": {
     "$oid": "68d5587a2a5566a690aa470d"
   },
   "type": "OUT",
-  "qty": 5,
+  "qty": 8,
   "at": {
-    "$date": "2025-09-27T16:00:00.000Z"
-  },
-  "reason": "sale"
+    "$date": "2025-04-08T18:00:00.000Z"
+  }
 },
 {
   "_id": {
-    "$oid": "68d5607f2a5566a690aa471a"
+    "$oid": "68d9c0c0451a13ab04d66756"
   },
   "product_id": {
-    "$oid": "68d54e832a5566a690aa4702"
+    "$oid": "68d5584d2a5566a690aa470b"
   },
-  "type": "IN",
-  "qty": 60,
+  "type": "OUT",
+  "qty": 2,
   "at": {
-    "$date": "2025-09-24T09:00:00.000Z"
-  },
-  "reason": "purchase"
+    "$date": "2025-06-12T15:20:00.000Z"
+  }
 },
 {
   "_id": {
-    "$oid": "68d5607f2a5566a690aa471b"
+    "$oid": "68d9cb66451a13ab04d66761"
+  },
+  "product_id": {
+    "$oid": "68d9cb66451a13ab04d6675c"
+  },
+  "type": "OUT",
+  "qty": 4,
+  "at": {
+    "$date": "2025-06-16T23:57:26.334Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68d9c0c0451a13ab04d66755"
+  },
+  "product_id": {
+    "$oid": "68d5584d2a5566a690aa470b"
+  },
+  "type": "IN",
+  "qty": 50,
+  "at": {
+    "$date": "2025-06-10T11:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68d9cb66451a13ab04d66765"
+  },
+  "product_id": {
+    "$oid": "68d9cb66451a13ab04d6675e"
+  },
+  "type": "OUT",
+  "qty": 2,
+  "at": {
+    "$date": "2025-05-26T23:57:26.334Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68d55ec62a5566a690aa4712"
   },
   "product_id": {
     "$oid": "68d54e832a5566a690aa4702"
@@ -168,29 +348,40 @@
 },
 {
   "_id": {
-    "$oid": "68d5607f2a5566a690aa471c"
+    "$oid": "68d9c0c0451a13ab04d66757"
   },
   "product_id": {
-    "$oid": "68d54ea22a5566a690aa4704"
+    "$oid": "68d5587a2a5566a690aa470d"
   },
   "type": "IN",
-  "qty": 200,
+  "qty": 80,
   "at": {
-    "$date": "2025-09-24T09:10:00.000Z"
-  },
-  "reason": "purchase"
+    "$date": "2025-04-05T09:00:00.000Z"
+  }
 },
 {
   "_id": {
-    "$oid": "68d5607f2a5566a690aa471d"
+    "$oid": "68f41fc17edc5d8124b66ea5"
   },
   "product_id": {
-    "$oid": "68d54ea22a5566a690aa4704"
+    "$oid": "68ef0e92d780c57deb7dfe95"
   },
-  "type": "OUT",
-  "qty": 12,
+  "qty": 120,
+  "type": "IN",
   "at": {
-    "$date": "2025-09-26T13:00:00.000Z"
+    "$date": "2025-10-18T23:16:17.158Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68f41fc17edc5d8124b66ea8"
   },
-  "reason": "sale"
+  "product_id": {
+    "$oid": "68ef0e92d780c57deb7dfe96"
+  },
+  "qty": -5,
+  "type": "OUT",
+  "at": {
+    "$date": "2025-07-10T23:16:17.158Z"
+  }
 }]
