@@ -32,10 +32,11 @@ Database `inventory`, seeded from `data/`:
 
 | Collection | Documents | Fields |
 |---|---:|---|
-| `products` | 5 | `sku`, `name`, `category`, `cost`, `price`, `reorder_point`, `supplier_id` |
+| `products` | 32 | `sku`, `name`, `category`, `cost`, `price`, `reorder_point`, `supplier_id` |
 | `stock_movements` | 14 | `product_id`, `type` (`IN` / `OUT`), `qty`, `at`, `reason` |
+| `orders` | 16 | `customer_id`, `createdAt`, `city`, `items[]` (`product_id`, `qty`, `price`) |
 
-## The three questions
+## The four questions
 
 ### 1. What is the inventory worth? — `inventory_value_ILS.py`
 
@@ -72,6 +73,22 @@ Products below their reorder point, sorted by the size of the shortfall.
 | SKU-1005 | Bluetooth Headset | 20 | 30 | 10 |
 | SKU-1004 | Aluminum Laptop Stand | 8 | 15 | 7 |
 
+### 4. What sells best? — `top_k_sales_last_30d_top5.py`
+
+The five products with the highest quantity sold over a 30-day window, from `orders`.
+
+| Product | SKU | Units sold |
+|---|---|---:|
+| Wireless Keyboard | SKU-1001 | 43 |
+| USB-C Mouse | SKU-1002 | 37 |
+| Espresso 1kg | SKU123 | 35 |
+| Aluminum Laptop Stand | SKU-1004 | 22 |
+| Bluetooth Headset | SKU-1005 | 17 |
+
+The window ends at the most recent order in the collection rather than at today's date: the
+dataset is a fixed snapshot, so anchoring on the clock would return an empty result once the
+snapshot ages. Against a live database the two are the same thing.
+
 Every script prints its result as JSON and writes it to `out/<name>.json`; the files committed under
 `out/` are the output of an actual run.
 
@@ -85,5 +102,6 @@ Every script prints its result as JSON and writes it to `out/<name>.json`; the f
 ├── seed_db.py                     # loads data/ into MongoDB
 ├── inventory_value_ILS.py         # question 1
 ├── inventory_value_by_category.py # question 2
-└── reorder_list.py                # question 3
+├── reorder_list.py                # question 3
+└── top_k_sales_last_30d_top5.py   # question 4
 ```

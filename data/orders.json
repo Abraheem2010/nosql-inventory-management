@@ -1,0 +1,286 @@
+[{
+  "_id": {
+    "$oid": "68d6895c939d1b9633fd952a"
+  },
+  "customer_id": "CUST-102",
+  "createdAt": {
+    "$date": "2025-09-27T12:00:00.000Z"
+  },
+  "city": "Tel Aviv",
+  "items": [
+    {
+      "product_id": {
+        "$oid": "68d5584d2a5566a690aa470b"
+      },
+      "qty": 22,
+      "price": 150
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "68f41fc17edc5d8124b66eaa"
+  },
+  "createdAt": {
+    "$date": "2025-10-08T23:16:17.158Z"
+  },
+  "items": [
+    {
+      "product_id": {
+        "$oid": "68ef0e92d780c57deb7dfe95"
+      },
+      "qty": 15
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "68d8d66e624c6447af276a0f"
+  },
+  "createdAt": {
+    "$date": "2025-09-28T06:32:14.452Z"
+  },
+  "items": [
+    {
+      "product_id": {
+        "$oid": "68d54e832a5566a690aa4702"
+      },
+      "qty": 7,
+      "price": 30
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "68d91d80d655c4bfe87c8c94"
+  },
+  "createdAt": {
+    "$date": "2025-09-28T11:35:28.814Z"
+  },
+  "items": [
+    {
+      "product_id": {
+        "$oid": "68d345e52a5566a690aa46b8"
+      },
+      "qty": 40,
+      "price": 180
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "68d920ded655c4bfe87c8c96"
+  },
+  "createdAt": {
+    "$date": "2025-09-28T11:49:50.086Z"
+  },
+  "items": [
+    {
+      "product_id": {
+        "$oid": "68d5587a2a5566a690aa470d"
+      },
+      "qty": 1,
+      "price": 250
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "68d91b4e5ecc8280e28a856c"
+  },
+  "createdAt": {
+    "$date": "2025-09-28T11:26:06.146Z"
+  },
+  "items": [
+    {
+      "product_id": {
+        "$oid": "6703bf590831c55f5a1152a5"
+      },
+      "qty": 1,
+      "price": 250
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "68d9239063640fccc47b00e9"
+  },
+  "createdAt": {
+    "$date": "2025-09-28T12:01:20.007Z"
+  },
+  "items": [
+    {
+      "product_id": {
+        "$oid": "68d5587a2a5566a690aa470d"
+      },
+      "qty": 5,
+      "price": 250
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "68d91c07d655c4bfe87c8c93"
+  },
+  "createdAt": {
+    "$date": "2025-09-28T11:29:11.643Z"
+  },
+  "items": [
+    {
+      "product_id": {
+        "$oid": "6703bf590831c55f5a1152a5"
+      },
+      "qty": 1,
+      "price": 250
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "68f41fc17edc5d8124b66ea9"
+  },
+  "createdAt": {
+    "$date": "2025-10-18T23:16:17.158Z"
+  },
+  "items": [
+    {
+      "product_id": {
+        "$oid": "68ef0e92d780c57deb7dfe95"
+      },
+      "qty": 20
+    },
+    {
+      "product_id": {
+        "$oid": "68ef0e92d780c57deb7dfe96"
+      },
+      "qty": 10
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "68d6895c939d1b9633fd9527"
+  },
+  "customer_id": "CUST-1",
+  "createdAt": {
+    "$date": "2025-09-25T12:30:00.000Z"
+  },
+  "city": "Tel Aviv",
+  "items": [
+    {
+      "product_id": {
+        "$oid": "68d345e52a5566a690aa46b8"
+      },
+      "qty": 3,
+      "price": 150
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "68d923f3645f515d43fa6282"
+  },
+  "createdAt": {
+    "$date": "2025-09-28T12:02:59.066Z"
+  },
+  "items": [
+    {
+      "product_id": {
+        "$oid": "68d5587a2a5566a690aa470d"
+      },
+      "qty": 5,
+      "price": 250
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "68d6895c939d1b9633fd9529"
+  },
+  "customer_id": "CUST-102",
+  "createdAt": {
+    "$date": "2025-09-26T13:00:00.000Z"
+  },
+  "city": "Tel Aviv",
+  "items": [
+    {
+      "product_id": {
+        "$oid": "68d54ea22a5566a690aa4704"
+      },
+      "qty": 12,
+      "price": 25
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "68d6895c939d1b9633fd9528"
+  },
+  "customer_id": "CUST-101",
+  "createdAt": {
+    "$date": "2025-09-26T10:00:00.000Z"
+  },
+  "city": "Tel Aviv",
+  "items": [
+    {
+      "product_id": {
+        "$oid": "68d54e832a5566a690aa4702"
+      },
+      "qty": 30,
+      "price": 120
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "68d6895c939d1b9633fd952b"
+  },
+  "customer_id": "CUST-103",
+  "createdAt": {
+    "$date": "2025-09-27T16:00:00.000Z"
+  },
+  "city": "Tel Aviv",
+  "items": [
+    {
+      "product_id": {
+        "$oid": "68d5587a2a5566a690aa470d"
+      },
+      "qty": 5,
+      "price": 250
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "68d9194a5ecc8280e28a856b"
+  },
+  "createdAt": {
+    "$date": "2025-09-28T11:17:30.798Z"
+  },
+  "items": [
+    {
+      "product_id": {
+        "$oid": "6703bf590831c55f5a1152a1"
+      },
+      "qty": 40,
+      "price": 180
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "68d91ee0d655c4bfe87c8c95"
+  },
+  "createdAt": {
+    "$date": "2025-09-28T11:41:20.027Z"
+  },
+  "items": [
+    {
+      "product_id": {
+        "$oid": "68d5587a2a5566a690aa470d"
+      },
+      "qty": 1,
+      "price": 250
+    }
+  ]
+}]

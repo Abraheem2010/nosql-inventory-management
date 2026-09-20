@@ -1,5 +1,77 @@
 [{
   "_id": {
+    "$oid": "68d9cb66451a13ab04d6675d"
+  },
+  "sku": "SKU-TEST-102",
+  "name": "Ergonomic Office Chair",
+  "category": "Furniture",
+  "cost": 450,
+  "price": 950,
+  "reorder_point": 5,
+  "supplier_id": "SUP-4"
+},
+{
+  "_id": {
+    "$oid": "68d9ce916d2f02438ced42c5"
+  },
+  "sku": "SKU-2002",
+  "name": "Noise-Cancelling Headphones",
+  "category": "Audio",
+  "cost": 450,
+  "price": 900,
+  "reorder_point": 15,
+  "supplier_id": "SUP-3"
+},
+{
+  "_id": {
+    "$oid": "68d9ce916d2f02438ced42c8"
+  },
+  "sku": "SKU-2005",
+  "name": "Ergonomic Vertical Mouse",
+  "category": "Peripherals",
+  "cost": 120,
+  "price": 280,
+  "reorder_point": 25,
+  "supplier_id": "SUP-1"
+},
+{
+  "_id": {
+    "$oid": "68d9df1df4a0bb15638d80b8"
+  },
+  "sku": "SKU-4001",
+  "name": "Webcam Privacy Cover (3-pack)",
+  "category": "Accessories",
+  "cost": 5,
+  "price": 20,
+  "reorder_point": 50,
+  "supplier_id": "SUP-2"
+},
+{
+  "_id": {
+    "$oid": "68d9df1df4a0bb15638d80b9"
+  },
+  "sku": "SKU-4002",
+  "name": "Adjustable Under-Desk Foot Rest",
+  "category": "Furniture",
+  "cost": 80,
+  "price": 190,
+  "reorder_point": 10,
+  "supplier_id": "SUP-4"
+},
+{
+  "_id": {
+    "$oid": "68d9df1df4a0bb15638d80bf"
+  },
+  "sku": "SKU-4008",
+  "name": "RGB Backlit Mechanical Keyboard",
+  "category": "Peripherals",
+  "cost": 180,
+  "price": 400,
+  "reorder_point": 10,
+  "supplier_id": "SUP-3"
+},
+{
+  "_id": {
     "$oid": "68d345e52a5566a690aa46b8"
   },
   "sku": "SKU-1001",
@@ -9,30 +81,6 @@
   "price": 150,
   "reorder_point": 5,
   "supplier_id": "SUP-1"
-},
-{
-  "_id": {
-    "$oid": "68d54e832a5566a690aa4702"
-  },
-  "sku": "SKU-1002",
-  "name": "USB-C Mouse",
-  "category": "Electronics",
-  "cost": 60,
-  "price": 120,
-  "reorder_point": 40,
-  "supplier_id": "SUP-1"
-},
-{
-  "_id": {
-    "$oid": "68d54ea22a5566a690aa4704"
-  },
-  "sku": "SKU-1003",
-  "name": "HDMI Cable 2m",
-  "category": "Accessories",
-  "cost": 10,
-  "price": 25,
-  "reorder_point": 20,
-  "supplier_id": "SUP-2"
 },
 {
   "_id": {
@@ -48,6 +96,90 @@
 },
 {
   "_id": {
+    "$oid": "68d9ce916d2f02438ced42c4"
+  },
+  "sku": "SKU-2001",
+  "name": "27-inch 4K Monitor",
+  "category": "Monitors",
+  "cost": 800,
+  "price": 1500,
+  "reorder_point": 10,
+  "supplier_id": "SUP-1"
+},
+{
+  "_id": {
+    "$oid": "68d9ce916d2f02438ced42cd"
+  },
+  "sku": "SKU-2010",
+  "name": "Smart Power Strip",
+  "category": "Electronics",
+  "cost": 90,
+  "price": 200,
+  "reorder_point": 20,
+  "supplier_id": "SUP-3"
+},
+{
+  "_id": {
+    "$oid": "68d9df1df4a0bb15638d80bb"
+  },
+  "sku": "SKU-4004",
+  "name": "Wireless In-ear Earbuds",
+  "category": "Audio",
+  "cost": 220,
+  "price": 450,
+  "reorder_point": 15,
+  "supplier_id": "SUP-3"
+},
+{
+  "_id": {
+    "$oid": "68d9df1df4a0bb15638d80ba"
+  },
+  "sku": "SKU-4003",
+  "name": "Portable SSD 2TB",
+  "category": "Components",
+  "cost": 600,
+  "price": 1100,
+  "reorder_point": 8,
+  "supplier_id": "SUP-1"
+},
+{
+  "_id": {
+    "$oid": "68d9cb66451a13ab04d6675c"
+  },
+  "sku": "SKU-TEST-101",
+  "name": "Portable Power Bank",
+  "category": "Electronics",
+  "cost": 75,
+  "price": 180,
+  "reorder_point": 20,
+  "supplier_id": "SUP-1"
+},
+{
+  "_id": {
+    "$oid": "68d9ce916d2f02438ced42ca"
+  },
+  "sku": "SKU-2007",
+  "name": "LED Desk Lamp",
+  "category": "Office Supplies",
+  "cost": 80,
+  "price": 180,
+  "reorder_point": 30,
+  "supplier_id": "SUP-4"
+},
+{
+  "_id": {
+    "$oid": "68d9df1df4a0bb15638d80bc"
+  },
+  "sku": "SKU-4005",
+  "name": "Monitor Stand with Drawers",
+  "category": "Monitors",
+  "cost": 90,
+  "price": 200,
+  "reorder_point": 12,
+  "supplier_id": "SUP-4"
+},
+{
+  "_id": {
     "$oid": "68d5587a2a5566a690aa470d"
   },
   "sku": "SKU-1005",
@@ -57,4 +189,190 @@
   "price": 250,
   "reorder_point": 30,
   "supplier_id": "SUP-3"
+},
+{
+  "_id": {
+    "$oid": "68d9cb66451a13ab04d6675e"
+  },
+  "sku": "SKU-TEST-103",
+  "name": "4K Webcam",
+  "category": "Accessories",
+  "cost": 110,
+  "price": 280,
+  "reorder_point": 15,
+  "supplier_id": "SUP-2"
+},
+{
+  "_id": {
+    "$oid": "68ef1b91d780c57deb7e00cb"
+  },
+  "sku": "SKU999",
+  "category": "Coffee",
+  "cost": 20,
+  "name": "Old Beans 250g",
+  "reorder_point": 10
+},
+{
+  "_id": {
+    "$oid": "68d54e832a5566a690aa4702"
+  },
+  "sku": "SKU-1002",
+  "name": "USB-C Mouse",
+  "category": "Electronics",
+  "cost": 60,
+  "price": 120,
+  "reorder_point": 40,
+  "supplier_id": "SUP-1"
+},
+{
+  "_id": {
+    "$oid": "68d9cb66451a13ab04d6675f"
+  },
+  "sku": "SKU-TEST-104",
+  "name": "Mechanical Keyboard",
+  "category": "Electronics",
+  "cost": 150,
+  "price": 350,
+  "reorder_point": 10,
+  "supplier_id": "SUP-3"
+},
+{
+  "_id": {
+    "$oid": "68d9ce916d2f02438ced42cb"
+  },
+  "sku": "SKU-2008",
+  "name": "1TB NVMe SSD",
+  "category": "Components",
+  "cost": 350,
+  "price": 600,
+  "reorder_point": 12,
+  "supplier_id": "SUP-1"
+},
+{
+  "_id": {
+    "$oid": "68d9ce916d2f02438ced42cc"
+  },
+  "sku": "SKU-2009",
+  "name": "Gaming Mousepad XXL",
+  "category": "Peripherals",
+  "cost": 40,
+  "price": 100,
+  "reorder_point": 40,
+  "supplier_id": "SUP-2"
+},
+{
+  "_id": {
+    "$oid": "68ef0e92d780c57deb7dfe95"
+  },
+  "sku": "SKU123",
+  "category": "Coffee",
+  "cost": 31.5,
+  "name": "Espresso 1kg",
+  "reorder_point": 50
+},
+{
+  "_id": {
+    "$oid": "68d54ea22a5566a690aa4704"
+  },
+  "sku": "SKU-1003",
+  "name": "HDMI Cable 2m",
+  "category": "Accessories",
+  "cost": 10,
+  "price": 25,
+  "reorder_point": 20,
+  "supplier_id": "SUP-2"
+},
+{
+  "_id": {
+    "$oid": "68d9df1df4a0bb15638d80be"
+  },
+  "sku": "SKU-4007",
+  "name": "34-inch Curved Gaming Monitor",
+  "category": "Monitors",
+  "cost": 1500,
+  "price": 2800,
+  "reorder_point": 5,
+  "supplier_id": "SUP-1"
+},
+{
+  "_id": {
+    "$oid": "68d9df1df4a0bb15638d80bd"
+  },
+  "sku": "SKU-4006",
+  "name": "Cable Management Box",
+  "category": "Office Supplies",
+  "cost": 30,
+  "price": 75,
+  "reorder_point": 30,
+  "supplier_id": "SUP-2"
+},
+{
+  "_id": {
+    "$oid": "68d9ce916d2f02438ced42c6"
+  },
+  "sku": "SKU-2003",
+  "name": "Standing Desk (Electric)",
+  "category": "Furniture",
+  "cost": 1200,
+  "price": 2200,
+  "reorder_point": 5,
+  "supplier_id": "SUP-4"
+},
+{
+  "_id": {
+    "$oid": "68d9ce916d2f02438ced42c9"
+  },
+  "sku": "SKU-2006",
+  "name": "Condenser USB Microphone",
+  "category": "Audio",
+  "cost": 300,
+  "price": 650,
+  "reorder_point": 10,
+  "supplier_id": "SUP-3"
+},
+{
+  "_id": {
+    "$oid": "68d9ce916d2f02438ced42c7"
+  },
+  "sku": "SKU-2004",
+  "name": "Docking Station USB-C",
+  "category": "Accessories",
+  "cost": 250,
+  "price": 550,
+  "reorder_point": 20,
+  "supplier_id": "SUP-2"
+},
+{
+  "_id": {
+    "$oid": "68d9df1df4a0bb15638d80c1"
+  },
+  "sku": "SKU-4010",
+  "name": "Smart Reusable Notebook",
+  "category": "Office Supplies",
+  "cost": 50,
+  "price": 130,
+  "reorder_point": 20,
+  "supplier_id": "SUP-4"
+},
+{
+  "_id": {
+    "$oid": "68d9df1df4a0bb15638d80c0"
+  },
+  "sku": "SKU-4009",
+  "name": "Premium Leather Mousepad",
+  "category": "Accessories",
+  "cost": 35,
+  "price": 90,
+  "reorder_point": 25,
+  "supplier_id": "SUP-2"
+},
+{
+  "_id": {
+    "$oid": "68ef0e92d780c57deb7dfe96"
+  },
+  "sku": "SKU777",
+  "category": "Coffee",
+  "cost": 18,
+  "name": "Filter 500g",
+  "reorder_point": 30
 }]
